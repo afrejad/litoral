@@ -1,0 +1,62 @@
+---
+const titulo = "Laboratorio de proyectos web";
+const subtitulo =
+  "Aprendiendo a crear páginas web modernas, funcionales y bien estructuradas con Astro y Tailwind.";
+---
+
+<section id="inicio" class="mx-auto grid max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:items-center">
+  <div>
+    <p class="mb-4 text-sm uppercase tracking-[0.25em] text-zinc-400">
+      Diseño moderno + funcionalidad
+    </p>
+
+    <h1 class="text-4xl font-bold leading-tight md:text-6xl">
+      {titulo}
+    </h1>
+
+    <p class="mt-6 max-w-xl text-lg leading-8 text-zinc-300">
+      {subtitulo}
+    </p>
+
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a
+        href="#proyectos"
+        class="rounded-xl bg-white px-5 py-3 font-semibold text-zinc-900 transition hover:scale-[1.02]"
+      >
+        Ver proyectos
+      </a>
+
+      <a
+        href="#contacto"
+        class="rounded-xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800"
+      >
+        Contactarme
+      </a>
+    </div>
+  </div>
+
+  <div class="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 shadow-2xl">
+    <div class="space-y-4">
+      <div class="rounded-2xl bg-zinc-800/70 p-4">
+        <h2 class="text-xl font-semibold">Sitio profesional</h2>
+        <p class="mt-2 text-zinc-300">
+          Estructura clara, diseño limpio y adaptable a distintos proyectos.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-zinc-800/70 p-4">
+        <h2 class="text-xl font-semibold">Diseño responsivo</h2>
+        <p class="mt-2 text-zinc-300">
+          La página se adapta a computador, tableta y celular.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-zinc-800/70 p-4">
+        <h2 class="text-xl font-semibold">Base escalable</h2>
+        <p class="mt-2 text-zinc-300">
+          Más adelante podrás agregar secciones, imágenes, formularios y páginas nuevas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
