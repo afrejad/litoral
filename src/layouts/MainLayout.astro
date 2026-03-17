@@ -7,18 +7,23 @@ const { title } = Astro.props;
 const siteTitle = title ? `${title} | Litoral` : "Litoral";
 ---
 
-<html lang="es">
+<html lang="es" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{siteTitle}</title>
+    <link rel="icon" type="image/png" href={`${import.meta.env.BASE_URL}favicon.png`} />
   </head>
 
-  <body class="bg-zinc-950 text-zinc-100">
+  <body class="min-h-screen bg-zinc-950 text-zinc-100 antialiased">
+    <div class="fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(120,119,198,0.18),transparent_35%),radial-gradient(circle_at_80%_20%,rgba(56,189,248,0.10),transparent_25%),linear-gradient(to_bottom,#09090b,#09090b)]"></div>
+<div class="pointer-events-none fixed inset-0 -z-10 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:72px_72px] opacity-[0.14]"></div>
     <Navbar />
+
     <main>
       <slot />
     </main>
+
     <Footer />
   </body>
 </html>

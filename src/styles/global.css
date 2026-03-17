@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  font-feature-settings: "liga", "kern";
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0.18);
+  color: white;
+}
